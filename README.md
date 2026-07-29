@@ -25,4 +25,17 @@ Project repo for the JPMC Advanced Software Engineering Forage program.
 - Configure your listener to use the project’s existing Spring Boot setup—no need to specify host/port, as the tests use an embedded Kafka instance.
 - Run TaskTwoTests, use your debugger to inspect the first four received transactions, and record the amounts attached to each.
 
-## Integrate 
+## Integrate H2
+
+## What you'll learn
+How to integrate a SQL database into a Spring Boot application using H2 and Spring Data JPA.
+How backend systems validate financial transactions and enforce business rules before persisting data.
+How to model relational data using JPA entities, including one-to-many and many-to-one relationships.
+How to combine data ingestion (Kafka) with database persistence in a cohesive service flow.
+
+## What you'll do
+Configure Midas Core to use an H2 in-memory database through Spring Boot and JPA.
+Implement validation logic to determine whether a transaction is valid based on user IDs and account balances.
+Create a TransactionRecord JPA entity and persist valid transactions while discarding invalid ones.
+Update the sender and recipient balances when transactions are successfully processed.
+Run TaskThreeTests, inspect the final balance of the waldorf user in your debugger, and submit the rounded-down value.
